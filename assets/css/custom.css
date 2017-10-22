@@ -1,0 +1,65 @@
+body {
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+body:before {
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 100%;
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+
+.section {
+	padding: 10px 0;
+}
+
+.section-profile { padding-top: 70px; }
+
+.section-profile h3,
+.section-socials h5,
+.section-story h3,
+.section-story h5,
+.section-socials h5 {
+	font-weight: 600;
+	color: #fff;
+}
+
+.section-profile p,
+.section-story p,
+.section-socials p {
+	font-weight: 300;
+	color: #fff;
+}
+
+.socials {
+	list-style: none;
+}
+
+.socials > li {
+	display: inline-block;
+}
+
+.socials > li > a {
+	margin-right: 2rem;
+	font-size: 4rem;
+	text-align: center;
+	color: #fefefe;
+	transition: all .5s;
+}
+
+.socials > li > a:hover {
+	opacity: .3;
+}
+
+.section-story .fa-heart {
+	color: #f18;
+}
